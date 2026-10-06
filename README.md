@@ -11,8 +11,8 @@ A primeira etapa do projeto é a biblioteca de **Resumos Prontos**, com visual e
 ### Estrutura desta versão
 
 - 6 módulos principais
-- 36 disciplinas
-- 108 resumos completos
+- 37 disciplinas
+- 111 resumos completos
 - galeria de módulos
 - galeria de disciplinas
 - páginas individuais por assunto
