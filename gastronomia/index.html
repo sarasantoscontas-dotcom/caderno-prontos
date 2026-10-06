@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f7f5">
+<title>Caderno do Estudante de Gastronomia — Resumos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="workspace">
+      <div class="workspace-icon">G</div>
+      <div><strong>Gastronomia</strong><span>Caderno Acadêmico</span></div>
+    </div>
+    <button class="new-note" id="homeBtn">⌂ <span>Início</span></button>
+    <div class="search"><span>⌕</span><input id="sidebarSearch" placeholder="Buscar no caderno"></div>
+    <nav>
+      <div class="nav-title">ESTUDO</div>
+      <button class="nav-item active" data-view="resumos"><span>▤</span> Resumos <b id="summaryTotal"></b></button>
+      <button class="nav-item locked"><span>◫</span> Flashcards <small>em breve</small></button>
+      <button class="nav-item locked"><span>⌘</span> Mapas mentais <small>em breve</small></button>
+      <div class="nav-title">ATALHOS</div>
+      <button class="nav-item" id="favBtn"><span>★</span> Favoritos <b id="favCount">0</b></button>
+      <button class="nav-item" id="recentBtn"><span>◷</span> Recentes</button>
+    </nav>
+    <div class="side-bottom"><div class="progress-label"><span>Progresso de leitura</span><b id="readPercent">0%</b></div><div class="progress"><i id="readProgress"></i></div><small>O progresso fica salvo neste navegador.</small></div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <button class="menu" id="menuBtn">☰</button>
+      <div class="breadcrumbs" id="breadcrumbs"></div>
+      <div class="top-actions">
+        <button id="searchBtn">⌕ Buscar</button>
+        <button id="backBtn" hidden>← Voltar</button>
+      </div>
+    </header>
+    <div id="content"></div>
+  </main>
+</div>
+
+<div class="modal" id="searchModal" hidden>
+  <div class="modal-card">
+    <div class="modal-head"><strong>Buscar em todos os resumos</strong><button id="closeSearch">×</button></div>
+    <input id="globalSearch" autofocus placeholder="Digite matéria, assunto ou palavra-chave...">
+    <div id="searchResults"></div>
+  </div>
+</div>
+
+<script src="./data.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
